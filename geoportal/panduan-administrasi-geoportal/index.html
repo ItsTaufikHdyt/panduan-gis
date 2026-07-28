@@ -1,0 +1,1055 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Panduan Pemeliharaan Sistem Geoportal & GIS">
+      
+      
+        <meta name="author" content="Admin GIS">
+      
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Administrasi & Maintenance - Dokumentasi & Panduan Geoportal</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#panduan-administrasi-pemeliharaan-geoportal" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Dokumentasi &amp; Panduan Geoportal" class="md-header__button md-logo" aria-label="Dokumentasi & Panduan Geoportal" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Dokumentasi & Panduan Geoportal
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Administrasi & Maintenance
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Dokumentasi &amp; Panduan Geoportal" class="md-nav__button md-logo" aria-label="Dokumentasi & Panduan Geoportal" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Dokumentasi & Panduan Geoportal
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Beranda
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Panduan Geoportal
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Panduan Geoportal
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Administrasi & Maintenance
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Administrasi & Maintenance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-manajemen-pengguna-keamanan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Manajemen Pengguna &amp; Keamanan
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Manajemen Pengguna &amp; Keamanan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-membuat-mengubah-kata-sandi-administrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Membuat &amp; Mengubah Kata Sandi Administrator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-membatasi-pendaftaran-pengguna" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Membatasi Pendaftaran Pengguna
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-pemeliharaan-backup-data-backup-recovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Pemeliharaan &amp; Backup Data (Backup &amp; Recovery)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Pemeliharaan &amp; Backup Data (Backup &amp; Recovery)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-backup-database-postgresql-postgis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Backup Database PostgreSQL / PostGIS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-backup-volume-data-geoserver" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Backup Volume Data GeoServer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-sinkronisasi-layer-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Sinkronisasi Layer &amp; Metadata
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Sinkronisasi Layer &amp; Metadata">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-sinkronisasi-data-internal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Sinkronisasi Data Internal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-regenerasi-xml-metadata-pengaturan-izin-publik" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Regenerasi XML Metadata &amp; Pengaturan Izin Publik
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-konfigurasi-geoserver-integrasi-layanan-spasial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Konfigurasi GeoServer &amp; Integrasi Layanan Spasial
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Konfigurasi GeoServer &amp; Integrasi Layanan Spasial">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-aturan-penulisan-sld-styled-layer-descriptor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Aturan Penulisan SLD (Styled Layer Descriptor)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-menangani-kendala-ssl-reverse-proxy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Menangani Kendala SSL / Reverse Proxy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-mengaktifkan-cors-untuk-integrasi-arcgis-online" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Mengaktifkan CORS untuk Integrasi ArcGIS Online
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-pembersihan-cache-perbaikan-tampilan-static-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Pembersihan Cache &amp; Perbaikan Tampilan (Static Files)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Pembersihan Cache &amp; Perbaikan Tampilan (Static Files)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-membersihkan-cache-server-reverse-proxy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Membersihkan Cache Server &amp; Reverse Proxy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-memperbarui-berkas-statis-migrasi-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Memperbarui Berkas Statis &amp; Migrasi Database
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-referensi-perintah-django-manage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Referensi Perintah Django Manage
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-manajemen-pengguna-keamanan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Manajemen Pengguna &amp; Keamanan
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Manajemen Pengguna &amp; Keamanan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-membuat-mengubah-kata-sandi-administrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Membuat &amp; Mengubah Kata Sandi Administrator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-membatasi-pendaftaran-pengguna" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Membatasi Pendaftaran Pengguna
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-pemeliharaan-backup-data-backup-recovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Pemeliharaan &amp; Backup Data (Backup &amp; Recovery)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Pemeliharaan &amp; Backup Data (Backup &amp; Recovery)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-backup-database-postgresql-postgis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Backup Database PostgreSQL / PostGIS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-backup-volume-data-geoserver" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Backup Volume Data GeoServer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-sinkronisasi-layer-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Sinkronisasi Layer &amp; Metadata
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Sinkronisasi Layer &amp; Metadata">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-sinkronisasi-data-internal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Sinkronisasi Data Internal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-regenerasi-xml-metadata-pengaturan-izin-publik" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Regenerasi XML Metadata &amp; Pengaturan Izin Publik
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-konfigurasi-geoserver-integrasi-layanan-spasial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Konfigurasi GeoServer &amp; Integrasi Layanan Spasial
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Konfigurasi GeoServer &amp; Integrasi Layanan Spasial">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-aturan-penulisan-sld-styled-layer-descriptor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Aturan Penulisan SLD (Styled Layer Descriptor)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-menangani-kendala-ssl-reverse-proxy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Menangani Kendala SSL / Reverse Proxy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-mengaktifkan-cors-untuk-integrasi-arcgis-online" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Mengaktifkan CORS untuk Integrasi ArcGIS Online
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-pembersihan-cache-perbaikan-tampilan-static-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Pembersihan Cache &amp; Perbaikan Tampilan (Static Files)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Pembersihan Cache &amp; Perbaikan Tampilan (Static Files)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-membersihkan-cache-server-reverse-proxy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Membersihkan Cache Server &amp; Reverse Proxy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-memperbarui-berkas-statis-migrasi-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Memperbarui Berkas Statis &amp; Migrasi Database
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-referensi-perintah-django-manage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Referensi Perintah Django Manage
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="panduan-administrasi-pemeliharaan-geoportal">Panduan Administrasi &amp; Pemeliharaan Geoportal</h1>
+<p>Halaman ini berisi kumpulan perintah operasional, skrip administrasi, dan langkah-langkah pemeliharaan (<em>maintenance</em>) untuk mengelola ekosistem Geoportal berbasis <strong>GeoNode</strong> dan <strong>GeoServer</strong> di lingkungan Docker.</p>
+<hr />
+<h2 id="1-manajemen-pengguna-keamanan">1. Manajemen Pengguna &amp; Keamanan</h2>
+<h3 id="a-membuat-mengubah-kata-sandi-administrator">A. Membuat &amp; Mengubah Kata Sandi Administrator</h3>
+<p>Perintah berikut digunakan untuk mengelola akun dengan hak akses penuh (<em>superuser</em>) pada Django GeoNode.</p>
+<ul>
+<li>
+<p><strong>Mengubah Kata Sandi Admin yang Sudah Ada:</strong>
+  <code>bash
+  docker exec -it django4geoportal python manage.py changepassword admin</code></p>
+</li>
+<li>
+<p><strong>Membuat Akun Superuser Baru:</strong>
+  <code>bash
+  docker exec -it django4geoportal python manage.py createsuperuser</code></p>
+</li>
+</ul>
+<h3 id="b-membatasi-pendaftaran-pengguna">B. Membatasi Pendaftaran Pengguna</h3>
+<p>Untuk menjaga keamanan sistem agar tidak sembarang orang bisa mendaftar atau mengunggah layer, sesuaikan variabel berikut pada file konfigurasi environment (<code>settings.py</code> atau <code>.env</code>):</p>
+<ul>
+<li>
+<p><strong>Menutup Pendaftaran Mandiri (Public Signup):</strong>
+  <code>python
+  ACCOUNT_OPEN_SIGNUP=False</code></p>
+</li>
+<li>
+<p><strong>Mewajibkan Moderasi Admin untuk Setiap Unggahan Data:</strong>
+  <code>python
+  ADMIN_MODERATE_UPLOADS=True</code></p>
+</li>
+</ul>
+<hr />
+<h2 id="2-pemeliharaan-backup-data-backup-recovery">2. Pemeliharaan &amp; Backup Data (Backup &amp; Recovery)</h2>
+<p>Lakukan prosedur backup ini secara berkala untuk meminimalisasi risiko kehilangan data spasial maupun konfigurasi sistem.</p>
+<h3 id="a-backup-database-postgresql-postgis">A. Backup Database PostgreSQL / PostGIS</h3>
+<p>Mengunduh seluruh <em>dump</em> basis data <code>geonode</code> dari container PostgreSQL ke dalam file <code>.sql</code> berformat tanggal hari ini:</p>
+<pre><code class="language-bash">docker exec -t db4geoportal pg_dump -U postgres geonode &gt; backup_$(date +%F).sql
+</code></pre>
+<h3 id="b-backup-volume-data-geoserver">B. Backup Volume Data GeoServer</h3>
+<p>Mengompres seluruh data konfigurasi dan <em>style</em> dari volume Docker <code>geoserver_data</code> menjadi berkas tarball (<code>.tar.gz</code>):</p>
+<pre><code class="language-bash">docker run --rm -v geoserver_data:/data -v $(pwd):/backup alpine tar czf /backup/geoserver_backup.tar.gz -C /data
+</code></pre>
+<hr />
+<h2 id="3-sinkronisasi-layer-metadata">3. Sinkronisasi Layer &amp; Metadata</h2>
+<p>Gunakan perintah ini saat terdapat ketidaksesuaian data antara GeoServer, GeoNode, dan PostgreSQL, atau setelah melakukan <em>bulk update</em>.</p>
+<h3 id="a-sinkronisasi-data-internal">A. Sinkronisasi Data Internal</h3>
+<ul>
+<li>
+<p><strong>Sinkronisasi Dataset GeoNode:</strong>
+  <code>bash
+  docker exec -it django4geoportal python manage.py sync_geonode_datasets</code></p>
+</li>
+<li>
+<p><strong>Memperbarui Seluruh Layer (atau Layer Tertentu):</strong>
+  ```bash
+  # Memperbarui seluruh layer
+  docker exec -it django4geoportal python manage.py updatelayers</p>
+</li>
+</ul>
+<p># Memperbarui layer spesifik saja
+  docker exec -it django4geoportal python manage.py updatelayers --filter=nama_layer_anda
+  ```</p>
+<ul>
+<li><strong>Menyegarkan Seluruh Metadata Dataset:</strong>
+  <code>bash
+  docker exec -it django4geoportal python manage.py set_all_datasets_metadata</code></li>
+</ul>
+<h3 id="b-regenerasi-xml-metadata-pengaturan-izin-publik">B. Regenerasi XML Metadata &amp; Pengaturan Izin Publik</h3>
+<p>Prosedur ini dilakukan jika file XML metadata corrupt, tidak tampil pada domain <em>production</em>, atau tidak dapat dibaca oleh aplikasi desktop GIS seperti QGIS tanpa login:</p>
+<ol>
+<li><strong>Generate Ulang File XML Metadata:</strong>
+   ```bash
+   # Regenerasi seluruh file XML
+   docker exec -it django4geoportal python manage.py regenerate_xml</li>
+</ol>
+<p># Regenerasi file XML untuk layer tertentu saja
+   docker exec -it django4geoportal python manage.py regenerate_xml -l lahan_pemkot_update_190923
+   ```</p>
+<ol>
+<li><strong>Buka Akses Izin Baca (<em>View Permissions</em>):</strong>
+   <code>bash
+   docker exec -it django4geoportal python manage.py set_layers_permissions --permission=view</code></li>
+</ol>
+<hr />
+<h2 id="4-konfigurasi-geoserver-integrasi-layanan-spasial">4. Konfigurasi GeoServer &amp; Integrasi Layanan Spasial</h2>
+<h3 id="a-aturan-penulisan-sld-styled-layer-descriptor">A. Aturan Penulisan SLD (Styled Layer Descriptor)</h3>
+<blockquote>
+<p><strong>Penting:</strong> Saat menyusun file XML SLD untuk <em>symbology</em> peta di GeoServer, tag properti wajib menggunakan format <strong>huruf kecil (<em>lowercase</em>)</strong>.</p>
+</blockquote>
+<pre><code class="language-xml">&lt;ogc:PropertyName&gt;nama_kolom&lt;/ogc:PropertyName&gt;
+</code></pre>
+<h3 id="b-menangani-kendala-ssl-reverse-proxy">B. Menangani Kendala SSL / Reverse Proxy</h3>
+<p>Jika GeoServer mengalami kendala CSRF saat diakses melalui HTTPS (SSL), Anda dapat menambahkan properti parameter JVM berikut secara sementara:</p>
+<pre><code class="language-bash">-DGEOSERVER_CSRF_DISABLED=true
+</code></pre>
+<h3 id="c-mengaktifkan-cors-untuk-integrasi-arcgis-online">C. Mengaktifkan CORS untuk Integrasi ArcGIS Online</h3>
+<p>Agar layanan peta WMS/WFS/WMTS dari GeoServer dapat dipanggil dan diakses langsung dari platform lain (seperti ArcGIS Online atau aplikasi pihak ketiga), tambahkan filter CORS ke dalam berkas <code>web.xml</code> GeoServer:</p>
+<ol>
+<li>
+<p><strong>Atur isi konfigurasi <code>web.xml</code>:</strong>
+   <code>xml
+   &lt;filter&gt;
+       &lt;filter-name&gt;DockerGeoServerCorsFilter&lt;/filter-name&gt;
+       &lt;filter-class&gt;org.apache.catalina.filters.CorsFilter&lt;/filter-class&gt;
+       &lt;init-param&gt;
+           &lt;param-name&gt;cors.allowed.origins&lt;/param-name&gt;
+           &lt;param-value&gt;[https://geoportal.bontangkota.go.id](https://geoportal.bontangkota.go.id),[https://bontangkota.maps.arcgis.com](https://bontangkota.maps.arcgis.com),[https://arcgis.com](https://arcgis.com)&lt;/param-value&gt;
+       &lt;/init-param&gt;
+       &lt;init-param&gt;
+           &lt;param-name&gt;cors.support.credentials&lt;/param-name&gt;
+           &lt;param-value&gt;true&lt;/param-value&gt;
+       &lt;/init-param&gt;
+       &lt;init-param&gt;
+           &lt;param-name&gt;cors.allowed.methods&lt;/param-name&gt;
+           &lt;param-value&gt;GET,POST,PUT,DELETE,HEAD,OPTIONS&lt;/param-value&gt;
+       &lt;/init-param&gt;
+   &lt;/filter&gt;</code></p>
+</li>
+<li>
+<p><strong>Terapkan perubahan ke dalam Container GeoServer:</strong>
+   ```bash
+   # Salin file web.xml yang telah diperbarui ke dalam container
+   docker cp ./web.xml geoserver4geoportal:/usr/local/tomcat/webapps/geoserver/WEB-INF/web.xml</p>
+</li>
+</ol>
+<p># Backup skrip entrypoint jika diperlukan
+   docker cp geoserver4geoportal:/usr/local/tomcat/tmp/entrypoint.sh ./entrypoint.sh</p>
+<p># Muat ulang container GeoServer
+   docker compose up -d --force-recreate geoserver
+   ```</p>
+<hr />
+<h2 id="5-pembersihan-cache-perbaikan-tampilan-static-files">5. Pembersihan Cache &amp; Perbaikan Tampilan (Static Files)</h2>
+<p>Gunakan perintah ini ketika Anda baru saja mengubah kode template web, gambar, CSS/JS, atau ketika perubahan data pada peta tidak langsung terlihat di peramban (browser).</p>
+<h3 id="a-membersihkan-cache-server-reverse-proxy">A. Membersihkan Cache Server &amp; Reverse Proxy</h3>
+<pre><code class="language-bash"># Restart memori cache aplikasi Django
+docker restart memcached4geoportal
+
+# Restart Nginx web server untuk reload cache gateway
+docker restart nginx4geoportal
+</code></pre>
+<h3 id="b-memperbarui-berkas-statis-migrasi-database">B. Memperbarui Berkas Statis &amp; Migrasi Database</h3>
+<p>Jika tampilan UI berantakan atau ada pembaruan tabel Django:</p>
+<pre><code class="language-bash"># Kumpulkan ulang berkas statis (CSS, JS, Media)
+docker exec -it django4geoportal python manage.py collectstatic --noinput --clear
+
+# Eksekusi migrasi skema tabel jika ada perubahan struktur
+docker exec -it django4geoportal python manage.py migrate
+</code></pre>
+<hr />
+<h2 id="6-referensi-perintah-django-manage">6. Referensi Perintah Django Manage</h2>
+<p>Untuk melihat seluruh daftar perintah (<em>command line utility</em>) bawaan Django &amp; GeoNode yang tersedia pada sistem:</p>
+<pre><code class="language-bash">docker exec -it django4geoportal python manage.py help
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.expand", "navigation.top", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
