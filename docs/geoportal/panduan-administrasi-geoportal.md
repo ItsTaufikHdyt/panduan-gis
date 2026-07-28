@@ -120,7 +120,7 @@ Agar layanan peta WMS/WFS/WMTS dari GeoServer dapat dipanggil dan diakses langsu
        <filter-class>org.apache.catalina.filters.CorsFilter</filter-class>
        <init-param>
            <param-name>cors.allowed.origins</param-name>
-           <param-value>[https://geoportal.bontangkota.go.id](https://geoportal.bontangkota.go.id),[https://bontangkota.maps.arcgis.com](https://bontangkota.maps.arcgis.com),[https://arcgis.com](https://arcgis.com)</param-value>
+           <param-value>https://geoportal.bontangkota.go.id,https://bontangkota.maps.arcgis.com,https://arcgis.com</param-value>
        </init-param>
        <init-param>
            <param-name>cors.support.credentials</param-name>
