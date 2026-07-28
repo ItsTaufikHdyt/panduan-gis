@@ -1,0 +1,19 @@
+site_name: Dokumentasi & Panduan Geoportal
+site_description: Panduan Pemeliharaan Sistem Geoportal & GIS
+site_author: Admin GIS
+
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: blue
+  features:
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Beranda: index.md
+  - Panduan Geoportal:
+      - Administrasi & Maintenance: geoportal/panduan-administrasi-geoportal.md
