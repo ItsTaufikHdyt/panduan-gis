@@ -493,14 +493,16 @@
 <hr />
 <h2 id="bantuan-cepat-quick-commands">💡 Bantuan Cepat (Quick Commands)</h2>
 <p>Berikut adalah beberapa perintah operasional cepat yang paling sering digunakan:</p>
-<p>```bash</p>
-<h1 id="cek-status-seluruh-container-geoportal">Cek status seluruh container Geoportal</h1>
-<p>docker compose ps</p>
-<h1 id="bersihkan-cache-web-gateway-nginx">Bersihkan cache web &amp; gateway Nginx</h1>
-<p>docker restart memcached4geoportal nginx4geoportal</p>
-<h1 id="regenerasi-xml-metadata-izin-baca-publik">Regenerasi XML metadata &amp; izin baca publik</h1>
-<p>docker exec -it django4geoportal python manage.py regenerate_xml
-docker exec -it django4geoportal python manage.py set_layers_permissions --permission=view</p>
+<pre><code class="language-bash"># Cek status seluruh container Geoportal
+docker compose ps
+
+# Bersihkan cache web &amp; gateway Nginx
+docker restart memcached4geoportal nginx4geoportal
+
+# Regenerasi XML metadata &amp; izin baca publik
+docker exec -it django4geoportal python manage.py regenerate_xml
+docker exec -it django4geoportal python manage.py set_layers_permissions --permission=view
+</code></pre>
 
 
 
