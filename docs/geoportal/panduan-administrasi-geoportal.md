@@ -10,17 +10,14 @@ Halaman ini berisi kumpulan perintah operasional, skrip administrasi, dan langka
 Perintah berikut digunakan untuk mengelola akun dengan hak akses penuh (*superuser*) pada Django GeoNode.
 
 * **Mengubah Kata Sandi Admin yang Sudah Ada:**
-
-  ```bash
-  docker exec -it django4geoportal python manage.py changepassword admin
-  ```
+    ```bash
+    docker exec -it django4geoportal python manage.py changepassword admin
+    ```
 
 * **Membuat Akun Superuser Baru:**
-
-  ```bash
-  docker exec -it django4geoportal python
-  manage.py createsuperuser
-  ```
+    ```bash
+    docker exec -it django4geoportal python manage.py createsuperuser
+    ```
 
 ### B. Membatasi Pendaftaran Pengguna
 Untuk menjaga keamanan sistem agar tidak sembarang orang bisa mendaftar atau mengunggah layer, sesuaikan variabel berikut pada file konfigurasi environment (`settings.py` atau `.env`):
