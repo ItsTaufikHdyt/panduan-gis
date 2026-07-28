@@ -843,17 +843,16 @@
 <h3 id="a-membuat-mengubah-kata-sandi-administrator">A. Membuat &amp; Mengubah Kata Sandi Administrator</h3>
 <p>Perintah berikut digunakan untuk mengelola akun dengan hak akses penuh (<em>superuser</em>) pada Django GeoNode.</p>
 <ul>
-<li><strong>Mengubah Kata Sandi Admin yang Sudah Ada:</strong>
-  ```bash</li>
+<li><strong>Mengubah Kata Sandi Admin yang Sudah Ada:</strong></li>
 </ul>
-<p>docker exec -it django4geoportal python manage.py changepassword admin</p>
-<p>```</p>
+<p><code>bash
+  docker exec -it django4geoportal python manage.py changepassword admin</code></p>
 <ul>
-<li><strong>Membuat Akun Superuser Baru:</strong>
-  ```bash</li>
+<li><strong>Membuat Akun Superuser Baru:</strong></li>
 </ul>
-<p>docker exec -it django4geoportal python manage.py createsuperuser</p>
-<p>```</p>
+<p><code>bash
+  docker exec -it django4geoportal python
+  manage.py createsuperuser</code></p>
 <h3 id="b-membatasi-pendaftaran-pengguna">B. Membatasi Pendaftaran Pengguna</h3>
 <p>Untuk menjaga keamanan sistem agar tidak sembarang orang bisa mendaftar atau mengunggah layer, sesuaikan variabel berikut pada file konfigurasi environment (<code>settings.py</code> atau <code>.env</code>):</p>
 <ul>
