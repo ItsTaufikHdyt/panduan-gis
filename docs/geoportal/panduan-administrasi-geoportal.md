@@ -11,12 +11,16 @@ Perintah berikut digunakan untuk mengelola akun dengan hak akses penuh (*superus
 
 * **Mengubah Kata Sandi Admin yang Sudah Ada:**
   ```bash
+  
   docker exec -it django4geoportal python manage.py changepassword admin
+  
   ```
 
 * **Membuat Akun Superuser Baru:**
   ```bash
+
   docker exec -it django4geoportal python manage.py createsuperuser
+  
   ```
 
 ### B. Membatasi Pendaftaran Pengguna
