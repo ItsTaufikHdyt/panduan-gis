@@ -42,3 +42,4 @@ docker restart memcached4geoportal nginx4geoportal
 # Regenerasi XML metadata & izin baca publik
 docker exec -it django4geoportal python manage.py regenerate_xml
 docker exec -it django4geoportal python manage.py set_layers_permissions --permission=view
+```
